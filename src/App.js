@@ -1,9 +1,10 @@
 import './App.css';
+import { Main } from './screens';
 
 function App() {
   return (
     <div className="App">
-      tab extention
+      <Main />
     </div>
   );
 }

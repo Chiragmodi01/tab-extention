@@ -1,0 +1,7 @@
+.Settings {
+    grid-column: 1/span 1;
+    grid-row: 3/-1;
+}
+.icon-setting {
+    fill: var(--light);
+}

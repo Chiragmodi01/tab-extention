@@ -1,3 +1,6 @@
+@import url('/src/styles/variables.css');
+@import url('/src/styles/utility.css');
+
 .App {
   font-family: 'Quicksand', sans-serif;
 }

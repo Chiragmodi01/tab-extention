@@ -1,0 +1,6 @@
+:root {
+    --white : #ffffff;
+    --light: #f1f5f9;
+    --light-low: rgba(255, 255, 255, 0.445);
+    /* --light-grey: #d3d3d3; */
+}
