@@ -3,19 +3,21 @@ import { get } from "axios";
 
 export const useBackgroundImage = () => {
     const [bgURL, setBgURL] = useState(null);
-    const defaultBgImg = 'https://pixabay.com/get/g251625c76f3e2fd9d0a8a8afc2c83e830a2920d39b20892ab3ce2f3a8c21636cf49311cd4afb1766fc59cf78c6cbab1736cf03da88a8f21ce72ad7d48839d527_1280.jpg'
+    const [bgCategories, setBgCategoies] = useState(['nature']);
+    const randomBgCategory = bgCategories[Math.floor(Math.random()*bgCategories.length)]
+    // bgCategories.map((category) => category)
 
-    // accepted cats : backgrounds, fashion, nature, science, education, feelings, health, people, religion, places, animals, industry, computer, food, sports, transportation, travel, buildings, business, music
+    const defaultBgImg = 'https://pixabay.com/get/g51f2ec521e94f4b828cab9c04e990341ec3fe5557c35e190a2b4befa185a2f61ad1f474c407ff1b93f2a18e093deb0a35bb0734dd9483411d18a55ff98748bd3_1280.jpg'
 
     const ACCESS_KEY = '27443352-bb87137647822329acb8af729';
-    const endpointLocation = `https://pixabay.com/api/?key=${ACCESS_KEY}&q=landscape&image_type=photo&orientation=horizontal&category=nature&per_page=50&order=popular`;
+    const endpointLocation = `https://pixabay.com/api/?key=${ACCESS_KEY}&q=landscape&image_type=photo&orientation=horizontal&category=${randomBgCategory}&per_page=50&order=popular`;
+
+    console.log(endpointLocation)
 
     const fetchBgImage = async() => {
-        console.log('running')
         try {
             const res = await get(endpointLocation);
             setBgURL(res.data.hits[Math.floor(Math.random() * res.data.hits.length)].largeImageURL)
-            console.log(res.data)
         } catch(error) {
             console.log(error.message);
             setBgURL(defaultBgImg)
@@ -26,5 +28,8 @@ export const useBackgroundImage = () => {
         fetchBgImage();
     }, [])
     
-    return bgURL;
+    return {bgURL, bgCategories, setBgCategoies}
+
+    // const ACCESS_KEY ='yqZg2NDW5ZeY5mY9xhrcBgW3dt6sJzvZ40SmZOzPOC0';
+    // const endpointLocation = `https://api.unsplash.com/photos/?client_id=${ACCESS_KEY}`;
 }

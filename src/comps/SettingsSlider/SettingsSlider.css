@@ -1,0 +1,26 @@
+.SettingsSlider {
+    background-color: var(--dark);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    padding: 5rem;
+    padding-left: 2rem;
+    transform: translateX(-100%);
+    transition: all 0.35s ease;
+}
+.SettingsSlider.open {
+    transform: translateX(0);
+    transition: all 0.35s ease;
+}
+.SettingsSlider-wrapper {
+    gap: .5rem;
+}
+.bgCategory-label {
+    font-size: 1.2rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+.bgCategory-label:hover {
+    color: var(--light-low);
+}
