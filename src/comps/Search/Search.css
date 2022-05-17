@@ -1,0 +1,32 @@
+.Search {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+}
+.Search-container{
+    font-size: .9rem;
+    margin: .5rem 0;
+    gap: 1.2rem;
+    color: var(--light);
+}
+.Search-container input{
+    font-size: .85rem;
+    color: var(--white);
+    align-self: baseline;
+    cursor: pointer;
+}
+.Search-container input::placeholder{
+    color: var(--light);
+}
+.Search-container input:focus::placeholder{
+    color: var(--light-low);
+}
+.Search:hover{
+    border-bottom: 1.5px solid var(--light-low);
+}
+.Search:focus-within{
+    border-bottom: 1.5px solid var(--light);
+    transition: all 0.3s ease;
+}
+.icon-search {
+    color: var(--light);
+}
