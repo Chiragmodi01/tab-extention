@@ -29,7 +29,7 @@ function Main() {
         <Settings openSlider={openSlider} setOpenSlider={setOpenSlider}/>
         {!openSlider && <Search />}
         <Clock setShowConfetti={setShowConfetti}/>
-        <Confetti width={confettiWidth} height={confettiHeight} numberOfPieces={500} onConfettiComplete={() => setShowConfetti(false)} recycle={showConfetti} gravity={0.09} wind={0.01}/>
+        <Confetti width={confettiWidth} height={confettiHeight} numberOfPieces={showConfetti ? 500 : 0} onConfettiComplete={() => setShowConfetti(false)} recycle={showConfetti} gravity={0.09} wind={0.01}/>
     </main>
   )
 }
