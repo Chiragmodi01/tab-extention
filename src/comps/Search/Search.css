@@ -6,7 +6,7 @@
     font-size: .9rem;
     margin: .5rem 0;
     gap: 1.2rem;
-    color: var(--light);
+    color: var(--white);
 }
 .Search-container input{
     font-size: .85rem;
@@ -15,7 +15,7 @@
     cursor: pointer;
 }
 .Search-container input::placeholder{
-    color: var(--light);
+    color: var(--white);
 }
 .Search-container input:focus::placeholder{
     color: var(--light-low);
@@ -24,9 +24,9 @@
     border-bottom: 1.5px solid var(--light-low);
 }
 .Search:focus-within{
-    border-bottom: 1.5px solid var(--light);
+    border-bottom: 1.5px solid var(--white);
     transition: all 0.3s ease;
 }
 .icon-search {
-    color: var(--light);
+    color: var(--white);
 }
