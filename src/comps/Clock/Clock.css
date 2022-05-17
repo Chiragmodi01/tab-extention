@@ -1,0 +1,127 @@
+.Clock {
+    grid-column: 1/ -1;
+    grid-row: 2/span 1;
+    cursor: default;
+    text-shadow: 0px 0px 20px var(--light-grey);
+}
+.Clock-time {
+    font-size: 10rem;
+    position: relative;
+}
+.Clock-time:hover .clock-ghost-icon-wrapper {
+    visibility: visible;
+}
+.greetings-wrapper {
+    margin: 2rem 0;
+    font-size: 3.5rem;
+}
+.focus-wrapper {
+    font-size: 2rem;
+}
+.focus-text {
+    margin: 1rem 0;
+}
+.focus-input-wrapper {
+    border-bottom: 2.5px solid var(--light);
+    width: 100%;
+}
+.focus-input-wrapper.no-border {
+    border-bottom: none;
+    width: 170%;
+}
+.focus-input {
+    padding: 5px 0;
+    font-size: 2rem;
+    cursor: text;
+    text-align: center;
+    width: 95%;
+}
+.clock-ghost-icon-wrapper {
+    position: absolute;
+    right: -16rem;
+    visibility: hidden;
+}
+.icon-switch {
+    padding: .2rem;
+    color: var(--white);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.icon-switch:hover {
+    background-color: var(--light-mild);
+    transition: all 0.3s ease;
+}
+.icon-switch:hover + .clock-ghost-tooltip{
+    visibility: visible;
+}
+.clock-ghost-tooltip {
+    font-size: .9rem;
+    background-color: var(--grey);
+    padding: .5rem 1rem;
+    border: 3px solid var(--grey);
+    border-radius: .5rem;
+    position: relative;
+    margin-left:  1rem;
+    z-index: 1;
+    visibility: hidden;
+}
+.clock-ghost-tooltip:before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 25%;
+    border: solid var(--grey);
+    border-width: 4px 4px 0 0;
+    border-radius: 3px;
+    transform: rotate(-135deg);
+    background: var(--grey);
+    width: 10px;
+    height: 10px;
+}
+.focus-input.checkbox {
+    /* font-size: 1.7rem; */
+    position: relative;
+    /* width: auto; */
+    padding: 5px 0;
+}
+.focus-input.checkbox.focusDone {
+    text-decoration: line-through;
+}
+.focus-input.checkbox input{
+    height: 1.1rem;
+    width: 1.1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+.icon-focus {
+    position: absolute;
+    transform: translateX(-2.1rem);
+}
+.icon-focus:hover {
+    color: tomato;
+}
+.focus-input.checkbox:hover .icon-focus{
+    color: tomato;
+}
+.focus-icons-wrapper {
+    visibility: hidden;
+}
+.focus-input.checkbox:hover .focus-icons-wrapper{
+    visibility: visible;
+}
+.icon-close, .icon-edit {
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.icon-edit {
+    right: 3rem;
+}
+.focus-input-label {
+    cursor: pointer;
+}
