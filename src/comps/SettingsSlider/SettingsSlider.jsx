@@ -34,7 +34,7 @@ function SettingsSlider({ openSlider, setOpenSlider }) {
                 availableBgCategories.map((category) => {
                     return (
                         <label key={category} htmlFor={category} className="bgCategory-label flex-centered" onChange={(e) => bgCategoryHandler(e, category)}>
-                            <input defaultChecked={findDefaultCategory(category)} type="checkbox" name="bgCategory" id={category} />
+                            <input checked={findDefaultCategory(category)} type="checkbox" name="bgCategory" id={category} />
                             {category}
                         </label>
                     )

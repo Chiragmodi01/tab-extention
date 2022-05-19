@@ -1,0 +1,17 @@
+.UserOnboarding {
+    height: 100vh;
+    width: 100vw;
+    color: var(--white);
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.28);
+}
+.onboaring-title {
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+}
+.onboaring-input {
+    font-size: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+}
