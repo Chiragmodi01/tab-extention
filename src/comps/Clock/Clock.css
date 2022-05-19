@@ -23,18 +23,18 @@
 }
 .focus-input-wrapper {
     border-bottom: 2.5px solid var(--light);
-    width: 100%;
+    width: auto;
 }
 .focus-input-wrapper.no-border {
     border-bottom: none;
-    width: 170%;
+    width: auto;
 }
 .focus-input {
     padding: 5px 0;
     font-size: 2rem;
     cursor: text;
     text-align: center;
-    width: 95%;
+    width: 100%;
 }
 .clock-ghost-icon-wrapper {
     position: absolute;
@@ -80,10 +80,8 @@
     height: 10px;
 }
 .focus-input.checkbox {
-    /* font-size: 1.7rem; */
     position: relative;
-    /* width: auto; */
-    padding: 5px 0;
+    padding: 5px 6rem;
 }
 .focus-input.checkbox.focusDone {
     text-decoration: line-through;
