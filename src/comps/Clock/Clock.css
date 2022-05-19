@@ -23,7 +23,7 @@
 }
 .focus-input-wrapper {
     border-bottom: 2.5px solid var(--light);
-    width: auto;
+    width: 100%;
 }
 .focus-input-wrapper.no-border {
     border-bottom: none;
@@ -73,7 +73,7 @@
     top: 25%;
     border: solid var(--grey);
     border-width: 4px 4px 0 0;
-    border-radius: 3px;
+    border-radius: 0px;
     transform: rotate(-135deg);
     background: var(--grey);
     width: 10px;
