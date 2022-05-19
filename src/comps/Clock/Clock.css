@@ -12,7 +12,7 @@
     visibility: visible;
 }
 .greetings-wrapper {
-    margin: 2rem 0;
+    margin: .3rem 0 3rem 0;
     font-size: 3.5rem;
 }
 .focus-wrapper {
@@ -124,4 +124,9 @@
 }
 .focus-input-label {
     cursor: pointer;
+}
+.short-font {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Roboto Flex', sans-serif;
 }

@@ -8,6 +8,7 @@
     padding-left: 2rem;
     transform: translateX(-100%);
     transition: all 0.35s ease;
+    z-index: 1;
 }
 .SettingsSlider.open {
     transform: translateX(0);
