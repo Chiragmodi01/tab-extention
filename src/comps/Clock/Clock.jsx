@@ -15,8 +15,8 @@ function Clock({setShowConfetti, userName}) {
 
     const timeFunction = () => {
         let date = new Date();
-        let hours = `${date.getHours().length === 1 ? '0' : ''}${date.getHours()}`;
-        let minutes = `${date.getMinutes().length === 1 ? '0' : ''}${date.getMinutes()}`;
+        let hours = date.getHours();
+        let minutes = ('0'+date.getMinutes()).slice(-2);
         const currentTime = format24  ? `${hours}:${minutes}` : `${(hours % 12) || 12}:${minutes}` ;
         setTime(currentTime);
     }
