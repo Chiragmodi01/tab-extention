@@ -8,7 +8,7 @@ function Settings({ openSlider, setOpenSlider }) {
 
   return (
     <div className='Settings'>
-        {!openSlider && <AiFillSetting title="Background preferances" className='icon-setting' size="1.5em" onClick={() => setOpenSlider(prev => !prev)}/>}
+        {!openSlider && <AiFillSetting className='icon-setting' size="1.5em" onClick={() => setOpenSlider(prev => !prev)}/>}
         <SettingsSlider openSlider={openSlider} setOpenSlider={setOpenSlider}/>
     </div>
   )

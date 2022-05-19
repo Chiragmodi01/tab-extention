@@ -12,7 +12,7 @@
     visibility: visible;
 }
 .greetings-wrapper {
-    margin: .3rem 0 3rem 0;
+    margin: 2rem 0;
     font-size: 3.5rem;
 }
 .focus-wrapper {
@@ -23,18 +23,18 @@
 }
 .focus-input-wrapper {
     border-bottom: 2.5px solid var(--light);
-    width: auto;
+    width: 100%;
 }
 .focus-input-wrapper.no-border {
     border-bottom: none;
-    width: auto;
+    width: 170%;
 }
 .focus-input {
     padding: 5px 0;
     font-size: 2rem;
     cursor: text;
     text-align: center;
-    width: 100%;
+    width: 95%;
 }
 .clock-ghost-icon-wrapper {
     position: absolute;
@@ -80,8 +80,10 @@
     height: 10px;
 }
 .focus-input.checkbox {
+    /* font-size: 1.7rem; */
     position: relative;
-    padding: 5px 6rem;
+    /* width: auto; */
+    padding: 5px 0;
 }
 .focus-input.checkbox.focusDone {
     text-decoration: line-through;
@@ -122,9 +124,4 @@
 }
 .focus-input-label {
     cursor: pointer;
-}
-.short-font {
-    font-size: 1.3rem;
-    font-weight: 500;
-    font-family: 'Roboto Flex', sans-serif;
 }
