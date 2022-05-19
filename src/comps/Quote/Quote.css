@@ -3,4 +3,38 @@
     grid-row: 3/ -1;
     cursor: default;
     color: var(--light);
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.quote-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    max-width: 80%;
+    transition: all 0.3s ease;
+    z-index: 1;
+    transform: translateX(-4rem);
+}
+.Quote:hover .quote-title{
+    transition: all 0.3s ease;
+    transform: translate(-4rem, -.6rem);
+}
+.Quote:hover .quote-author{
+    transition: all 0.3s ease;
+    visibility: visible;
+    bottom: -.5rem;
+    color: var(--white);
+    transform: translateX(-4rem);
+}
+.quote-author {
+    font-size: 0.9em;
+   font-style: italic;
+   font-weight: 500;
+   margin-top: .5rem;
+   visibility: hidden;
+   transition: all 0.3s ease;
+   position: absolute;
+   bottom: 0;
+   color: transparent;
+   transform: translateX(-4rem);
 }
