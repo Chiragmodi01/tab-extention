@@ -21,7 +21,7 @@ function Main({userName}) {
   return (
     <main ref={confettiRef} className='Main-screen'>
         <Settings openSlider={openSlider} setOpenSlider={setOpenSlider}/>
-        {!openSlider && <Search />}
+        <Search openSlider={openSlider}/>
         <Clock setShowConfetti={setShowConfetti} userName={userName}/>
         <Todos />
         <Quote />
