@@ -3,7 +3,7 @@ import './Search.css'
 import {FiSearch, AiOutlineGoogle} from '../../utils/getIcons'
 import {useOnClickOutside} from '../../hooks';
 
-function Search() {
+function Search({openSlider}) {
     const [searchIcon, setSearchIcon] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
     const searchInputsRef = useOnClickOutside(() => setSearchIcon(false), searchIcon)
@@ -26,7 +26,7 @@ function Search() {
     const IconSearch = searchIcon ? AiOutlineGoogle : FiSearch;
 
   return (
-    <div className='Search' ref={searchInputsRef}>
+    <div className={`Search ${openSlider && 'hidden'}`} ref={searchInputsRef}>
         <form className="Search-container flex-centered" onSubmit={(e) => submitSearchHandler(e)}>
             <IconSearch size="1.25em" className='icon-search'/>
             <input value={searchQuery} onChange={(e) => searchInputHandler(e)} type="text" className="search-input flex-centered" placeholder='Google Search' onFocus={searchInputFocusHandler}/>

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './Todos.css'
-import { useFetchLocalStorage, useOnClickOutside } from '../../hooks'
+import { useOnClickOutside } from '../../hooks'
 import {IoMdClose} from '../../utils/getIcons';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -85,7 +85,7 @@ function Todos() {
                     return (
                         <span key={todo.id} className="todo-item flex-centered justify-start">
                             <label className={`${todo.isDone && 'strike-grey'} flex-centered`} htmlFor={todo.id}>
-                                <input checked={todo.isDone} type="checkbox" name="todo-item" id={todo.id} onChange={() => doneTodo(todo)}/>
+                                <input defaultChecked={todo.isDone} type="checkbox" name="todo-item" id={todo.id} onChange={() => doneTodo(todo)}/>
                                 {todo.title}</label>
                                 <IoMdClose size="1em" className='todo-icon-close' onClick={() => deleteTodo(todo)}/>
                         </span>

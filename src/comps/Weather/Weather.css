@@ -1,0 +1,66 @@
+.Weather {
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--dark);
+    padding: 1rem;
+    border-radius: .4rem;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    width: 25rem;
+    height: 15rem;
+}
+.weather-main {
+    z-index: 1;
+}
+.weather-main:before {
+    right: 2.5rem;
+    border: 5px solid transparent;
+    border-bottom-color: rgba(0,0,0,.81);
+    bottom: 100%;
+    content: "";
+    position: absolute;
+}
+.weather-top {
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid var(--white);
+    width: 100%;
+}
+.weather-location {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.weather-status {
+    font-size: .9rem;
+    padding-top: 5px;
+}
+.weather-temp {
+    font-size: 3.5rem;
+    padding: 0 7px;
+}
+.weather-top-bottom-right {
+    font-size: .85rem;
+    margin-left: 2rem;
+    gap: .4rem;
+    font-weight: 500;
+}
+.title-grey {
+    color: var(--light-low);
+}
+.weather-bottom {
+    gap: 3.5rem;
+    padding-top: .5rem;
+}
+.weather-bottom-item {
+    gap: .5rem;
+}
+.weather-bottom-item span{
+    gap: 5px;
+}
+.weather-bottom-item .title {
+    font-size: 1rem;
+}
+.weather-bottom-item .sun-time {
+    font-size: .9rem;
+    font-weight: 500;
+}

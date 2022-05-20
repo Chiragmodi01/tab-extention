@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react'
 import './Main.css';
 import {useBackgroundImage} from '../../hooks'
-import { Settings, Search, Clock, Todos, Quote } from '../../comps'
+import { Settings, Search, Clock, Todos, Quote, WeatherWidget } from '../../comps'
 import Confetti from 'react-confetti';
 
 function Main({userName}) {
@@ -21,10 +21,11 @@ function Main({userName}) {
   return (
     <main ref={confettiRef} className='Main-screen'>
         <Settings openSlider={openSlider} setOpenSlider={setOpenSlider}/>
-        {!openSlider && <Search />}
+        <Search openSlider={openSlider}/>
         <Clock setShowConfetti={setShowConfetti} userName={userName}/>
         <Todos />
         <Quote />
+        <WeatherWidget />
         <Confetti width={confettiWidth} height={confettiHeight} numberOfPieces={showConfetti ? 500 : 0} onConfettiComplete={() => setShowConfetti(false)} recycle={showConfetti} gravity={0.09} wind={0.01}/>
     </main>
   )

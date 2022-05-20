@@ -8,9 +8,8 @@ function Quote() {
     const fetchQuote = async() => {
         const URL = 'https://zenquotes.io/api/random';
         try {
-            const res = await axios.get(URL, {headers: res.header( "Access-Control-Allow-Origin" )});
-            console.log(res);
-            const data = JSON.parse(res.data);
+            const res = await axios.get(URL);
+            const data = JSON.parse(JSON.stringify(res.data[0]));
             setQuote({title: data.q, author: data.a});
         } catch(err) {
             console.log(err);
@@ -22,9 +21,9 @@ function Quote() {
     }, [])
 
   return (
-    <div className='Quote flex-centered'>
-        <span className="quote-title">{quote.title}</span>
-        <span className="auote-author">{quote.author}</span>
+    <div className='Quote flex-centered flex-col'>
+        <span className="quote-title">"{quote.title}"</span>
+        <span className="quote-author">- {quote.author}</span>
     </div>
   )
 }

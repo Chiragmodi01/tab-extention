@@ -103,8 +103,8 @@ function Clock({setShowConfetti, userName}) {
                         <IconFocus className='icon-focus'/>
                     {focus}</p>
                     <span className="focus-icons-wrapper flex-centered">
-                        <AiOutlineEdit size=".65em" className='icon-edit' onClick={focusEditHandler}/>
-                        <IoMdClose size=".65em" className='icon-close' onClick={focusCloseHandler}/>
+                        <AiOutlineEdit size=".85em" className='icon-edit' onClick={focusEditHandler}/>
+                        <IoMdClose size=".85em" className='icon-close' onClick={focusCloseHandler}/>
                     </span>
                 </label> : 
                 <input value={focus} type="text" className='focus-input' onChange={(e) => setFocus(e.target.value)}/>

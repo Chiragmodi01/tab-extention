@@ -116,6 +116,13 @@
     position: absolute;
     right: 0;
     cursor: pointer;
+    padding: .2rem;
+    transition: all 0.3s ease;
+    border-radius: 100%;
+}
+.icon-close:hover, .icon-edit:hover {
+    transition: all 0.3s ease;
+    background-color: var(--light-low);
 }
 .icon-edit {
     right: 3rem;
