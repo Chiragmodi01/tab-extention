@@ -2,6 +2,7 @@
     grid-column: 3/ -1;
     grid-row: 3/ -1;
     position: relative;
+    text-align: right;
 }
 .todos-main-text {
     cursor: pointer;
@@ -76,4 +77,9 @@
 .todo-icon-close {
     margin-left: auto;
     cursor: pointer;
+}
+.loader-wrapper{
+    width: 102px;
+    height: 56.5px;;
+    object-fit: cover;
 }

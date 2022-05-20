@@ -1,0 +1,12 @@
+.WeatherWidget {
+    grid-column: 3/ -1;
+    grid-row: 1/ span 1;
+    cursor: pointer;
+    position: relative;
+}
+.widget-status {
+    font-size: 1.8rem;
+}
+.widget-location {
+    font-size: .9rem;
+}
