@@ -1,11 +1,9 @@
 import React, {useEffect, useRef, useState} from 'react'
 import './Main.css';
-import {useBackgroundImage} from '../../hooks'
 import { Settings, Search, Clock, Todos, Quote, WeatherWidget } from '../../comps'
 import Confetti from 'react-confetti';
 
 function Main({userName}) {
-  const {bgURL, bgCategories, setBgCategoies} = useBackgroundImage();
   const [openSlider, setOpenSlider] = useState(false);
   const confettiRef = useRef(null);
   const [confettiHeight, setConfettiHeight] = useState(null);
