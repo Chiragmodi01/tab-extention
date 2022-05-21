@@ -3,8 +3,10 @@
 
 Turn your potential into progress with a beautifully simple start page by FlashTabs Extension.
 
-
-<img src="https://user-images.githubusercontent.com/75688193/169648518-a0e2f8b5-e7e3-4660-98ed-2dd4635b41b3.png" width="550" height="320" />
+<div align="center">
+<img src="https://user-images.githubusercontent.com/75688193/169650225-4a6b8235-976c-4d77-ae39-dc86ad8b61d7.png" width="500" height="300" style="display: block; margin: 0 auto" alt="flashtabz-ui"/>
+<img src="https://user-images.githubusercontent.com/75688193/169648518-a0e2f8b5-e7e3-4660-98ed-2dd4635b41b3.png" width="500" height="300" style="display: block; margin: 0 auto" alt="flashtabz-ui"/>
+</div>
 
 ## Features
 - User onboarding screen
@@ -25,13 +27,15 @@ Turn your potential into progress with a beautifully simple start page by FlashT
 <br />
 
 
-## 🖥️ Tech Stack
-<br />
-![ReactJs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+## 🖥️Tech stack
+    ReactJs
+    CSS3
+    JavaScript
 
+<br />
+<br />
+
+https://user-images.githubusercontent.com/75688193/169650161-e0c7d0cd-0212-4e06-9171-f7cb36083aca.mp4
 
 
 ## Author
