@@ -19,13 +19,18 @@ Turn your potential into progress with a beautifully simple start page by FlashT
 - User can see all the weather details of their geo location
 - User can add and delete todos
 
-#UI of FlashTabz
-
-
 
 <br />
-<br />
 
+# Instalation
+- Download zip file of the repo (click top right green color 'code' button)
+- Unzip the file in your desktop
+- Open chrome/brave manage extension
+- Turn on developer mode
+- Click on load unpack
+- Open build file inside unziped repo file in your desktop
+
+<br />
 
 ## 🖥️Tech stack
     ReactJs
@@ -34,6 +39,8 @@ Turn your potential into progress with a beautifully simple start page by FlashT
 
 <br />
 <br />
+
+# UI of FlashTabz
 
 https://user-images.githubusercontent.com/75688193/169650161-e0c7d0cd-0212-4e06-9171-f7cb36083aca.mp4
 
