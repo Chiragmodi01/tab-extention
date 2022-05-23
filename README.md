@@ -22,7 +22,7 @@ Turn your potential into progress with a beautifully simple start page by FlashT
 
 <br />
 
-# Instalation
+# Installation
 - Download zip file of the repo (click top right green color 'code' button)
 - Unzip the file in your desktop
 - Open chrome/brave manage extension
