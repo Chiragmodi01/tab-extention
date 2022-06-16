@@ -1,4 +1,4 @@
-## <img src="/public/favicon.svg" width="50" height="50" />[FlshTabz](https://flashtabs.vercel.app/)
+## <img src="/public/favicon.ico" width="50" height="50" />[FlshTabz](https://flashtabs.vercel.app/)
 
 
 Turn your potential into progress with a beautifully simple start page by FlashTabs Extension.

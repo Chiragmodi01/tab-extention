@@ -11,7 +11,7 @@
     "default_title": "FlashTabs",
     "default_newtab": "index.html",
     "default_icon": {
-      "48": "favicon.svg"
+      "48": "favicon.ico"
     }
 }
 }
