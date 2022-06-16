@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "FlashTabs",
   "author": "Chirag",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Turn your potential into progress with a beautifully simple start page by FlashTabs.",
   "chrome_url_overrides": {
 		"newtab": "index.html"
